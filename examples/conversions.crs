@@ -1,0 +1,11 @@
+let count = Int("42");
+let price = Float("19.95");
+
+print(count + 8);
+print("price: " + String(price));
+
+let failed = Int("not a number");
+
+if failed[1] == false {
+    print("conversion failed: " + failed[0]);
+}

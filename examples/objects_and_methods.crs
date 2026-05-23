@@ -1,0 +1,19 @@
+let make_counter = fn(label) {
+    return struct {
+        .label: label,
+        .count: 0,
+        .increment: fn(this) {
+            this.count = this.count + 1;
+            return this.count;
+        },
+        .to_string: fn(this) {
+            return this.label + ": " + String(this.count);
+        }
+    };
+};
+
+let counter = make_counter("jobs");
+counter->increment();
+counter->increment();
+
+print(counter);

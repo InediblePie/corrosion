@@ -1,0 +1,4 @@
+print("Hello, world!");
+
+let name = "Corrosion";
+print("Hello from " + name + "!");

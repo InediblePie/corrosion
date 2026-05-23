@@ -1,0 +1,14 @@
+namespace MathExamples {
+    extern let square = fn(value) {
+        return value * value;
+    };
+
+    extern let is_even = fn(value) {
+        return value % 2 == 0;
+    };
+
+    let hidden_message = "private";
+}
+
+print(MathExamples.square(6));
+print(MathExamples.is_even(10));
