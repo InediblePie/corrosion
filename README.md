@@ -30,7 +30,7 @@ namespace People {
     };
 }
 
-let person = People.make_person("Colby", 23);
+let person = People.make_person("Dale", 35);
 person->birthday();
 print(person);
 
